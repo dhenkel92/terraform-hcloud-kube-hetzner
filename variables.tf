@@ -4,6 +4,12 @@ variable "hcloud_token" {
   sensitive   = true
 }
 
+variable "is_vpn" {
+  type        = bool
+  default     = false
+  description = "should we do stuff within the network or from outside?"
+}
+
 variable "ssh_port" {
   description = "The main SSH port to connect to the nodes."
   type        = number

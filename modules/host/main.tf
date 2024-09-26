@@ -41,6 +41,7 @@ resource "hcloud_server" "server" {
       location,
       ssh_keys,
       user_data,
+      firewall_ids,
     ]
   }
 
